@@ -11,7 +11,7 @@ public class OnlineCourseManagementSystemApp {
         people.add(new Teacher(2, "Busra", "Turkce", 80000));
         people.add(new Student(10, "Mevlut",2));
         people.add(new Student(11, "Mehmet", 1));
-        people.add(new TeachingAssistant(3,"Mehmet", 2, 10, 0.3));
+        people.add(new TeachingAssistant(3,"Ahmet", 2, 10, 0.3));
 
         System.out.println("///ROLE DESCRIPTIONS");
         for(Person p: people){
@@ -22,8 +22,13 @@ public class OnlineCourseManagementSystemApp {
         for (Person peopleList : people) {
             if (peopleList instanceof Payable) {
                 Payable p = (Payable) peopleList;
-                System.out.println(peopleList.name + " payment: " + p.calculatePayment());
+                System.out.println(peopleList.getName() + " payment: " + p.calculatePayment());
             }
+        }
+
+        System.out.println("\n===INFO ABOUT ALL PEOPLE");
+        for(Person p: people){
+             System.out.println(p.getInfo());
         }
     }
 }

@@ -1,11 +1,27 @@
 package src;
 
 public abstract class Person {
-    public int id;//PersonID
-    public String name;//Person name
+    private int id;//PersonID
+    private String name;//Person name
 
     public Person(int id, String name){
         this.id = id;
+        this.name = name;
+    }
+
+    public int getId(){
+        return id;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public void setId(int id){
+        this.id = id;
+    }
+
+    public void setName(String name){
         this.name = name;
     }
 
