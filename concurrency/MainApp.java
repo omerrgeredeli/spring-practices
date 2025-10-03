@@ -30,5 +30,7 @@ public class MainApp {
         DeadlockDemo deadlockDemo = new DeadlockDemo();
         deadlockDemo.createDeadlock();
         // deadlockDemo.preventDeadlock(); // Çözüm için
+
+        System.out.println("Deneme");
     }
 }
