@@ -1,0 +1,4 @@
+[2025-10-05T01:01:43.628362300] Exception: NullPointerException - Cannot invoke "java.util.concurrent.ExecutorService.submit(java.util.concurrent.Callable)" because "executor" is null
+java.lang.NullPointerException: Cannot invoke "java.util.concurrent.ExecutorService.submit(java.util.concurrent.Callable)" because "executor" is null
+	at com.company.service.SalaryProcessor.processFilesConcurrently(SalaryProcessor.java:42)
+	at com.company.Main.main(Main.java:41)
